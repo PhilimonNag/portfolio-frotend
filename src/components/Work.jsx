@@ -9,7 +9,7 @@ const Work = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch(`${base_url}/project`);
+        const response = await fetch(`${base_url}project/`);
         
         if (!response.ok) {
           throw new Error('Something went wrong');

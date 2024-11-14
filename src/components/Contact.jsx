@@ -24,7 +24,7 @@ const Contact = ({ showSnackbar }) => {
     setLoading(true);
     showSnackbar('Sending message...', 'loading');
     await fetch(
-      `${base_url}/message`,{
+      `${base_url}message/`,{
         method:'POST',
         headers: {
         'Content-Type': 'application/json',
