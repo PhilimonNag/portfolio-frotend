@@ -12,8 +12,8 @@ COPY . .
 
 # Vite build-time env
 # (optional if you already use .env.production, but safe to keep)
-ARG VITE_API_URL
-ENV VITE_API_URL=${VITE_API_URL}
+
+ENV VITE_API_URL=https://api.philimonnag.com/
 
 # Build the app
 RUN npm run build
